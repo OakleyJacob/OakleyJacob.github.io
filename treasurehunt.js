@@ -2,7 +2,9 @@ const treasure = (location) => { // This takes in the argument of location and w
        var randomNum2 = "Box" + randomNum // Location of the treasure, we concatenate the string with the randomNum.
        clickCounter += 1
        var newNum = 10 - clickCounter
+       if (gameStatus) {
        document.getElementById("number").innerHTML = newNum
+       }
        var bomb2 = "Box" + bomb // Location of bomb, we concatenate the string with the bomb.
        if (gameStatus) { // This conditional checks if the game is still being played.
            document.getElementById (location).innerHTML = "🌲" // If it is still being played, it changes the location to a tree emoji.
